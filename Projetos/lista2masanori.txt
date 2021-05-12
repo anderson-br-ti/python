@@ -1,0 +1,99 @@
+#####Lista2
+#####Exercício1
+
+a=int(input('Digite três lados de um triângulo e vamos verificar se esses lados podem mesmo formar um triângulo. 1° lado: '))
+b=int(input('2° lado: '))
+c=int(input('3° lado: '))
+if a > b + c or b > a + c or c > a + b:
+    print('Não é um triângulo!')
+elif a == b == c:
+    print('É um triângulo equilátero!')
+elif a == b or b == c or a == c:
+    print('É um triângulo isósceles!')
+else:
+    print('É um triângulo escaleno!')
+
+#####Exercício2
+
+ano=int(input('Vamos verificar se um ano é bissexto. Digite o ano: '))
+if ano % 400 == 0 or (ano % 4 == 0 and ano % 100 != 0):
+    print ('%d é bissexto' %ano)
+else:
+    print ('%d não é bissexto' %ano)
+
+#####Exercício3
+
+peso_peixes=int(input('Digite o peso dos peixes em kg: '))
+if peso_peixes <= 50:
+    print ('Peso dos peixes=ZERO')
+else:
+    excesso = peso_peixes - 50
+    print('Houve excesso de %d quilos' %excesso)
+    multa = 4 * (peso_peixes - 50)
+    print('O valor da multa é de R$%.2f' %multa)
+
+#####Exercício4
+
+a=int(input('Digite três números, um de cada vez. 1°: '))
+b=int(input('2°: '))
+c=int(input('3°: '))
+
+if a > b and a > c:
+    print('O 1° número é o maior')
+elif b > a and b > c:
+    print('O 2° número é o maior')
+elif c > a and c > b:
+    print('O 3° número é o maior')
+
+#####Exercício5
+
+a=int(input('Digite três números, um de cada vez. 1°: '))
+b=int(input('2°: '))
+c=int(input('3°: '))
+
+if a > b and a > c:
+    print('O 1° número é o maior')
+elif b > a and b > c:
+    print('O 2° número é o maior')
+elif c > a and c > b:
+    print('O 3° número é o maior')
+
+if a < b and a < c:
+    print('O 1° número é o menor')
+elif b < a and b < c:
+    print('O 2° número é o menor')
+elif c < a and c < b:
+    print('O 3° número é o menor')
+
+#####Exercício6
+
+salario_hora=int(input('Quanto você ganha por hora? '))
+horas_trab_mes=int(input('Quantas horas você trabalha por mês? '))
+
+salario_bruto = salario_hora * horas_trab_mes
+print('+ Salário Bruto: R$%.2f' %salario_bruto )
+
+IR = salario_bruto * 0.11
+print('- IR: R$%.2f' %IR )
+
+INSS = salario_bruto * 0.08
+print('- INSS: R$%.2f' %INSS )
+
+Sindicato = salario_bruto * 0.05
+print('- Sindicato: R$%.2f' %Sindicato )
+
+Salario_liq = salario_bruto - (IR + INSS + Sindicato)
+print('= Salário Liquido: R$%.2f' %Salario_liq )
+
+
+#####Exercício7
+
+m=int(input('Qual o tamanho em metros quadrados da área a ser pintada? '))
+
+if m % 54 != 0:
+    latas = int(m / 54) + 1
+else:
+    latas - m / 54
+valor = latas * 80
+print('Quantidade de latas a serem compradas: %d' %latas )
+print('Preço total: R$%.2f' %valor )

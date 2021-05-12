@@ -1,0 +1,57 @@
+1)n1=int(input("Digite um número inteiro: "))
+n2=int(input("Digite outro número inteiro: "))
+print(n1+n2)
+
+
+2)metros=int(input("Digite um valor em metros e converteremos em milímetros: "))
+print(metros*1000)
+
+
+3)d=int(input("Digite uma quantidade de dias: "))
+h=int(input("Digite uma quantidade de horas: "))
+m=int(input("Digite uma quantidade de minutos: "))
+s=int(input("Digite uma quantidade de segundos: "))
+print((d*86400)+(h*3600)+(m*60)+s)
+
+
+4)salário=int(input("Digite o seu salário: "))
+aumento=int(input("Digite a porcentagem de aumento: "))
+print((aumento/100)*salário)
+print(((aumento/100)*salário)+salário)
+
+
+5)preço=int(input("Digite o preço da mercadoria: "))
+desconto=int(input("Digite o percentual de desconto: "))
+print((desconto/100)*preço)
+print(preço-((desconto/100)*preço))
+
+
+6)distância=int(input("Digite a distância a percorrer: "))
+vm=int(input("Digite a velocidade média esperada para a viagem: "))
+print((distância/1000)*vm)
+
+
+7)C=int(input('Digite a temperatura atual em °C: '))
+F=(9*C/5+32)
+print('Essa temperatura equivale a %d graus fahrenheit' % F)
+
+
+8)F=int(input('Digite a temperatura atual em °F: '))
+C=(5*(F-32)/9)
+print('Essa temperatura equivale a %d°C' % C)
+
+
+9)km_percorridos=int(input('Quantos km o carro já percorreu? '))
+dias_que_alugou=int(input('Você alugou o carro por quantos dias? '))
+preço_a_pagar=((60*dias_que_alugou)+(0.15*km_percorridos))
+print('O aluguel do carro vai custar R$%.2f' % preço_a_pagar)
+
+
+10)qte_cig_fum_dia=int(input('Quantos cigarros você fuma por dia? '))
+qte_anos_jafumou=int(input('Quantos anos você já fumou? '))
+dias_de_vida_perdidos=(qte_anos_jafumou*365*0.0069*qte_cig_fum_dia)
+print('Você perderá %d dias de vida' % dias_de_vida_perdidos)
+
+
+11)a=str(2**1000000)
+print(len(a))

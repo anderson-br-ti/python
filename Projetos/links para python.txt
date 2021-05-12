@@ -1,0 +1,12 @@
+Listas que irão cair na prova de Python:
+	VI, VII, IX, X
+	XIV Revisão Geral Python para Zumbis (PDF)
+	(existe uma lista XIV *.py não confundir)
+
+Caso não ache no pycursos, também estão no github:
+     https://github.com/fmasanori/PPZ	
+
+Outros links:
+	http://www.portaltransparencia.gov.br/
+	http://www.anac.gov.br/assuntos/dados-e-estatisticas/microdados-de-tarifas-aereas-comercializadas
+

@@ -1,0 +1,6 @@
+import string
+url = 'https://www.bayerpet.com.br/caes/lista-nomes/'
+for c string.ascii_uppercase:
+	for d in (1, 2, 3):
+		u = url + c + '/' + str(d)
+		print (u)

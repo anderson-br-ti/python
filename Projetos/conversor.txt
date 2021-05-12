@@ -1,0 +1,3 @@
+cm=int(input("Qual é a sua altura em cm? "))
+m=cm/100
+print("Sua altura é de %.2f metros" %m)

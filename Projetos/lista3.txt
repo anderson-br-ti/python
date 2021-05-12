@@ -1,0 +1,53 @@
+###Lista3
+
+###Exercicio1
+
+nota=int(input('Digite uma nota: '))
+
+while nota not in range(0,10):
+    print('Valor inválido!')
+    nota=int(input('Digite uma nota: '))
+
+###Exercicio2
+
+usuario=input('Digite o nome de usuário: ')
+senha=input('Digite a senha: ')
+
+while usuario == senha:
+    print('ERRO!')
+    usuario=input('Digite o nome de usuário: ')
+    senha=input('Digite a senha: ')
+
+###Exercicio3
+
+populacaoA = 80000
+populacaoB = 200000
+ano = 0
+
+while populacaoA <= populacaoB:
+    populacaoA = populacaoA + 0.03 * populacaoA
+    populacaoB = populacaoB + 0.015 * populacaoB
+    ano += 1
+print('Foram necessários %d anos para que o país A alcançasse B.' %ano)
+
+###Exercicio4
+
+numero = int(input('Digite um n°: '))
+a, b = 1, 1
+k = 1
+
+while k <= numero - 2:
+    a, b = b, a + b
+    k = k + 1
+
+print('Fibonacci(%d) = %d' %(numero, b))
+
+###Exercicio5
+
+a = int(input('a: '))
+b = int(input('b: '))
+
+while a % b != 0:
+    a, b = b, a % b
+
+print('mdc = %d' %b)

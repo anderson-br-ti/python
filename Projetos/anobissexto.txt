@@ -1,0 +1,8 @@
+ano=int(input('Vamos verificar se um ano é bissexto. Digite o ano: '))
+if ano / 400:
+    print ('%d é bissexto' %ano)
+elif ano / 4
+    print ('%d é bissexto' %ano)
+else:
+    print ('%d não é bissexto' %ano)
+    
